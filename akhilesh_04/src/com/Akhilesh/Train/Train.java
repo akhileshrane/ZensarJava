@@ -1,0 +1,67 @@
+package com.Akhilesh.Train;
+
+public class Train {
+
+	private int trainid;
+	private String trainName;
+	private String startingStation;
+	private String endingStation;
+
+	Train(int trainid, String trainName, String startingStation,
+			String endingStation) {
+		super();
+		this.trainid = trainid;
+		this.trainName = trainName;
+		this.startingStation = startingStation;
+		this.endingStation = endingStation;
+	}
+	
+	@Override
+	public String toString() {
+		return "Train [trainid=" + trainid + ", trainName=" + trainName
+				+ ", startingStation=" + startingStation + ", endingStation="
+				+ endingStation + "]";
+	}
+
+
+	public Train() {
+	}
+	public int getTrainid() {
+		return trainid;
+	}
+
+	public void setTrainid(int trainid) {
+		this.trainid = trainid;
+	}
+
+	public String getTrainName() {
+		return trainName;
+	}
+
+	public void setTrainName(String trainName) {
+		this.trainName = trainName;
+	}
+
+	public String getStartingStation() {
+		return startingStation;
+	}
+
+	public void setStartingStation(String startingStation) {
+		this.startingStation = startingStation;
+	}
+
+	public String getEndingStation() {
+		return endingStation;
+	}
+
+	public void setEndingStation(String endingStation) {
+		this.endingStation = endingStation;
+	}
+
+
+
+	 
+	  public static void main(String args[]) {
+
+}
+}

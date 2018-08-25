@@ -1,0 +1,15 @@
+package Akhilesh;
+
+import java.util.List;
+
+public class Test {
+	BusDao busDao = new BusDao();
+	List<Bus> busList = busDao.getBus();
+	for(Student student: allStudentList){
+	//	System.out.println(""+student);			
+		}
+	Student student=new Student();
+	//studentDao.addStudent(student);
+	studentDao.updateStudent(student);
+	studentDao.deleteStudent(15);
+}

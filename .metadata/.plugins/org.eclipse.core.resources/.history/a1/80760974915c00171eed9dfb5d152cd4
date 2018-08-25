@@ -1,0 +1,38 @@
+package Akhilesh;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class LoginDao {  
+  
+public static boolean validate(LoginBean bean){  
+boolean status=false;  
+try{  
+	String driverName = "com.mysql.jdbc.Driver";
+	String url= "jdbc:mysql://localhost/admin";
+	String userName="root";
+	String password="root";
+	
+	Class.forName(driverName);
+	Connection con= DriverManager.getConnection(url,userName,password);
+	Statement st=con.createStatement();
+		
+              
+	PreparedStatement ps=con.prepareStatement(  
+    "select * from admin where email=? and pass=?");  
+  
+	ps.setString(1,bean.getEmail());  
+	ps.setString(2, bean.getPass());  
+              
+	ResultSet rs=ps.executeQuery();  
+	status=rs.next();  
+              
+}
+catch(Exception e){
+	System.out.println(e.getMessage());
+}  
+  
+return status;  
+  
+}  
+}  

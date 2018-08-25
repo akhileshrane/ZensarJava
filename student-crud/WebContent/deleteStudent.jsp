@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="java.util.*"%>
+<%@page import="akhilesh.*"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Delete Student</title>
+<% 
+try{
+StudentDao studentDao=new StudentDao();
+int m= Integer.parseInt(request.getParameter("rollNumber"));
+studentDao.deleteStudent(m);
+response.sendRedirect("viewAllStudents.jsp");
+}
+catch(Exception e){
+	out.println("error");
+	response.sendRedirect("viewAllStudents.jsp");
+}
+%>
+
+
+</head>
+<body>
+<a href="index.jsp"> Click here to goto index page</a>
+<a href="viewAllStudents.jsp">Click here to View All Students</a>
+
+</body>
+</html>

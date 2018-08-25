@@ -1,0 +1,14 @@
+package Akhilesh;
+	
+public class User {
+	int x;
+	  int y;
+	  String name;
+
+		  public static void main(String args[]) {
+		     User pnt = new User();
+		     System.out.println("pnt is " + pnt.name + 
+		        " " + pnt.x + " " + pnt.y);		
+		  }
+	}
+

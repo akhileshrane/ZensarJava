@@ -1,0 +1,83 @@
+package com.Akhilesh.Employee;
+
+public class Employee {
+	
+	Employee() {
+		super();
+	}
+	
+	Employee(int employeeId, String employeeName, int age, Department department,int salary) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.age = age;
+		this.department = department;
+		this.salary=salary;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", employeeName="
+				+ employeeName + ", age=" + age + ", salary=" + salary
+				+ ", department=" + department + "]";
+	}
+
+
+
+	private int employeeId;
+	private String employeeName;
+	private int age;
+	private int salary;
+	private Department department;
+	
+	
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeID(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	
+	public int getAge()  {
+		return age;
+	}
+
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+	
+	public void setEmployeeName(String employeeName) {
+		this.employeeName= employeeName;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+		public static void main(String args[]) {
+		     int i, j;
+		     int k = 0;
+		     j = 2;
+		     k = j = i = 1;
+		     System.out.println(k);		
+	}
+}

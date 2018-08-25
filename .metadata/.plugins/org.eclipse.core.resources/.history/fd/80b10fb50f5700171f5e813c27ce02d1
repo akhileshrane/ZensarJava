@@ -1,0 +1,47 @@
+package com.Akhilesh.Train;
+import java.util.*;
+
+
+public class Test {
+
+	public static void displayMapOfTrains(Map<Integer,Train> mapOfTrains) {
+		Set <Integer> setOfKeys = mapOfTrains.keySet();
+		for(Integer key : setOfKeys) {
+			Train trainKey= mapOfTrains.get(key);
+			System.out.println(trainKey);
+		}
+	}
+	
+	public  Map<Integer , Train> findTrainsStartingFrom (Map<Integer,Train> mapOfTrains,String startingStation){
+		Map <Integer,Train> searchResult = new HashMap<Integer,Train>();
+		Set <Integer> setOfKeys = mapOfTrains.keySet();
+		for(Integer key : setOfKeys) {
+			if(mapOfTrains.containsValue(startingStation)){
+				Train trainKey= mapOfTrains.get(key);	
+				searchResult.put(key,trainKey);
+			}			
+		}
+		return searchResult;
+		
+	
+	}
+	public static void main(String[] args) {
+		Map<Integer,Train> mapOfTrains= new HashMap<Integer, Train>();
+		Train train=new Train(11,"Shatabdi","Mumbai","Delhi");
+		Train train1=new Train(99, "Modi Express", "Pune", "Gujrat");
+		Train train2=new Train(15, "Chennai Express", "Delhi", "Chennai");
+		Train train3=new Train(19, "Rajdhani", "Mumbai", "Ahemdabad");
+		Train train4=new Train(12, "Express", "Pune", "Delhi");
+		
+		mapOfTrains.put(train.getTrainid(),train);
+		mapOfTrains.put(train1.getTrainid(),train1);
+		mapOfTrains.put(train2.getTrainid(),train2);
+		mapOfTrains.put(train3.getTrainid(),train3);
+		mapOfTrains.put(train4.getTrainid(),train4);
+		//displayMapOfTrains(mapOfTrains);
+		Test test=new Test();
+		Map <Integer,Train> station=test.findTrainsStartingFrom(mapOfTrains,"Mumbai");
+		displayMapOfTrains(station);		
+	}
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@page import java.util.* %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>All Students List</title>
+</head>
+<body>
+<h2>All Students List</h2>
+	<table border="1">
+		<tr>
+			<td>Roll No.</td>
+			<td>Name</td>
+			<td>Age</td>
+			<td>Course</td>
+			<td>Edit</td>
+			<td>Delete</td>
+		</tr>
+
+<%
+StudentDao studentDao=new StudentDao();
+List<Student> allStudentList = studentDao.getAllStudents();
+for (Student student: allStudentList) {
+%>
+		<tr>
+			<td><%=student.getRollNumber() %></td>
+
+			<td><%= student.getName() %></td>
+
+			<td><%= student.getAge() %></td>
+
+			<td><%=student.getCourse() %></td>
+			<td><a href="updateStudent.jsp?rollNumber=<%=student.getRollNumber()%>">Edit</a></td>
+			<td><a href="deleteStudent.jsp?rollNumber=<%=student.getRollNumber()%>">Delete</a></td>
+
+		</tr>
+<%
+}
+%>
+
+	</table>
+	
+	<br><br>
+<a href="index.jsp">Click here to go to index page</a>
+</body>
+
+</html>

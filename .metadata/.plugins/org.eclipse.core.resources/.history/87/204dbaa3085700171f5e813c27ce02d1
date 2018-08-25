@@ -1,0 +1,13 @@
+package com.Akhilesh.Train;
+
+public class Train {
+
+	private int trainid;
+	private String trainName;
+	private String startingStation;
+	private String endingStation;
+	
+	public Train() {
+	}
+
+}

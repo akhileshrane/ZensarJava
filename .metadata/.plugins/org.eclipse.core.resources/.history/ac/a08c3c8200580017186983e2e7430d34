@@ -1,0 +1,39 @@
+package Akhilesh;
+
+public class BusStation {
+	
+	private String busStation;
+	private int platformCount;
+	
+	
+	BusStation(String busSation, int platformCount) {
+		super();
+		this.busStation = busSation;
+		this.platformCount = platformCount;
+	}
+
+
+	BusStation() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getBusStation() {
+		return busStation;
+	}
+	public void setBusStation(String busSation) {
+		this.busStation = busSation;
+	}
+
+	public int getPlatformCount() {
+		return platformCount;
+	}
+
+	public void setPlatformCount(int platformCount) {
+		this.platformCount = platformCount;
+	}
+
+	public static void main(String[] args) {
+	}
+
+}

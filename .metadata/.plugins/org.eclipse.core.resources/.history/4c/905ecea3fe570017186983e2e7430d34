@@ -1,0 +1,80 @@
+package Akhilesh;
+import java.sql.Time;
+import java.util.*;
+
+public class Bus {
+
+	private String busName;
+	private int arrivalTime; 
+	private int waitStatus;
+	List<Bus> busList =new ArrayList();
+	
+	
+	
+	Bus() {
+		super();
+	}
+
+
+
+	Bus(String busName, int arrivalTime, int waitStatus, List<Bus> busList) {
+		super();
+		this.busName = busName;
+		this.arrivalTime = arrivalTime;
+		this.waitStatus = waitStatus;
+		this.busList = busList;
+	}
+
+
+	public String getBusName() {
+		return busName;
+	}
+
+
+	public void setBusName(String busName) {
+		this.busName = busName;
+	}
+
+
+	public int getArrivalTime() {
+		return arrivalTime;
+	}
+
+
+	public void setArrivalTime(Time arrivalTime2) {
+		this.arrivalTime = arrivalTime2;
+	}
+
+
+
+	public int getWaitStatus() {
+		return waitStatus;
+	}
+
+
+	public void setWaitStatus(int waitStatus) {
+		this.waitStatus = waitStatus;
+	}
+
+
+	public List<Bus> getBusList() {
+		return busList;
+	}
+
+
+	public void setBusList(List<Bus> busList) {
+		this.busList = busList;
+	}
+
+	@Override
+	public String toString() {
+		return "Bus [busName=" + busName + ", arrivalTime=" + arrivalTime + ", waitStatus=" + waitStatus + ", busList="
+				+ busList + "]";
+	}
+
+
+
+	public static void main(String[] args) {
+	}
+
+}

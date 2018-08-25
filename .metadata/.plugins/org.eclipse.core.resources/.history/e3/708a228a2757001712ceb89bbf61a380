@@ -1,0 +1,16 @@
+package Akhilesh;
+import java.util.*;
+
+public class Bus {
+
+	private String busName;
+	private int arrivalTime; 
+	private int waitStatus;
+	List<Bus> busList =new ArrayList();
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

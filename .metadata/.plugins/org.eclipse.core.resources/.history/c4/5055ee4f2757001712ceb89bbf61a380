@@ -1,0 +1,12 @@
+package Akhilesh;
+
+public class BusStation {
+	
+	private String busSation;
+	private int platformCount;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

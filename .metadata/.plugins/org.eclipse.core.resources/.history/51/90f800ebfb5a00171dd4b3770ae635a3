@@ -1,0 +1,71 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>All Students List</title>
+</head>
+<body>
+<h2>All Students List</h2>
+	<table border="1">
+		<tr>
+			<td>Roll No.</td>
+			<td>Name</td>
+			<td>Age</td>
+			<td>Course</td>
+			<td>Edit</td>
+			<td>Delete</td>
+		</tr>
+
+
+		<tr>
+			<td>1</td>
+
+			<td>John Doe</td>
+
+			<td>18</td>
+
+			<td>BE</td>
+			<td><a href="updateStudent.html?rollNumber=1">Edit</a></td>
+			<td><a href="viewAllStudents.html?rollNumber=1">Delete</a></td>
+
+		</tr>
+
+
+
+		<tr>
+			<td>2</td>
+
+			<td>David</td>
+
+			<td>26</td>
+
+			<td>PhD</td>
+			<td><a href="updateStudent.html?rollNumber=2">Edit</a></td>
+			<td><a href="viewAllStudents.html?rollNumber=2">Delete</a></td>
+
+		</tr>
+
+
+
+		<tr>
+			<td>3</td>
+
+			<td>Dennish</td>
+
+			<td>3</td>
+
+			<td>MS</td>
+			<td><a href="updateStudent.html?rollNumber=3">Edit</a></td>
+			<td><a href="viewAllStudents.html?rollNumber=3">Delete</a></td>
+
+		</tr>
+
+
+	</table>
+	
+	<br><br>
+<a href="index.html">Click here to go to index page</a>
+</body>
+
+</html>

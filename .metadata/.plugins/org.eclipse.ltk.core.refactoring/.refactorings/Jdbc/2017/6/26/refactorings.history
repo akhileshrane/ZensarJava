@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;student-crud/src&apos;&#x0A;- Original project: &apos;Jdbc&apos;&#x0A;- Destination element: &apos;student-crud/src&apos;&#x0A;- Original elements:&#x0A;     Student.java&#x0A;     StudentDao.java" description="Copy compilation units" destination="=student-crud/src" element1="/src&lt;{Student.java" element2="/src&lt;{StudentDao.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1498540267602" units="2" version="1.0"/>
+</session>

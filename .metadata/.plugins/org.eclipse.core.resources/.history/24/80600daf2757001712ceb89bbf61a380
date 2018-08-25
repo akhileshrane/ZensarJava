@@ -1,0 +1,15 @@
+	package Akhilesh;
+	import java.util.*;
+
+public class Platform {
+	private int number;
+	private String busName;
+	private int isAllocated;
+	List<Platform> platformList = new ArrayList();
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
